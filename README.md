@@ -28,11 +28,11 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
 1. Clone o repositório:
 	```bash
    git clone https://github.com/nataliataira/portifolio
-```
+	```
 2. Abra o projeto no Visual Studio Code:
-   ```bash
+	```bash
    code portifolio
-```
+	```
 3. No VSCode, abra um arquivo HTML do projeto (ex: `index.html`).
 4. Clique com o botão direito no editor e selecione **"Open with Live Server"**.  
    - Alternativamente, você pode iniciar o **Live Server** através da barra de status do VSCode.
