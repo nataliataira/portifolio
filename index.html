@@ -7,11 +7,12 @@
     <meta name="author" content="Natalia Gomes Taira">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Meu Perfil</title>
 </head>
 <body>
     <header>
-        <div id="header_content">
+        <div id="header_content" class="flex">
             <div id="titulo">
                 <h1>Natalia Gomes Taira</h1>
             </div>
@@ -28,52 +29,53 @@
                 </nav>
             </div>
         </div>
-        <main>
-            <section id="about">
-                <h2>Sobre</h2>
-                <div id="conteudo">
-                    <img src="assets/img/user_02.svg" alt="Foto da criadora desse conteúdo">
-                    <article id="sobre_texto">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati repellendus cumque reprehenderit. Sequi labore molestiae, eveniet, veniam id vero autem nisi adipisci impedit suscipit eum, saepe ab optio aspernatur.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat reprehenderit deserunt architecto officiis non quidem ipsum nisi voluptates dolor? Quas quia rerum, odit eaque dolorem quo iusto eius amet nisi?
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section id="video">
-                <h2>Meu vídeo favorito</h2>
-                <div id="youtube">
-                    <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/CWt3fQNgvqE?si=-VLssrbjD-rNylkI" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
-                    >
-                    </iframe>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section id="redes_sociais">
-                <a href="">
-                    <img src="assets/img/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img src="assets/img/github.svg" alt="Github">
-                </a>
-                <a href="">
-                    <img src="assets/img/instagram.svg" alt="Instagram">
-                </a>
-            </section>
-            <h3>Nenhum &lt;div&gt; foi maltratado no processo. — Natalia Gomes Taira, 2025</h3>
-        </footer>
     </header>
+    <main>
+        <section id="about" class="flex_start">
+            <h2>Sobre</h2>
+            <div id="conteudo" class="flex">
+                <img src="assets/img/user_02.svg" alt="Foto da criadora desse conteúdo" class="img_profile">
+                <article id="sobre_texto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut obcaecati repellendus cumque reprehenderit. Sequi labore molestiae, eveniet, veniam id vero autem nisi adipisci impedit suscipit eum, saepe ab optio aspernatur.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat reprehenderit deserunt architecto officiis non quidem ipsum nisi voluptates dolor? Quas quia rerum, odit eaque dolorem quo iusto eius amet nisi?
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="video" class="flex_start">
+            <h2>Meu vídeo favorito</h2>
+            <div id="youtube" class="flex">
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/CWt3fQNgvqE?si=-VLssrbjD-rNylkI" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+                >
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="redes_sociais">
+            <a href="">
+                <img src="assets/img/linkedin.svg" class="social_icon" alt="LinkedIn">
+            </a>
+            <a href="">
+                <img src="assets/img/github.svg" class="social_icon" alt="Github">
+            </a>
+            <a href="">
+                <img src="assets/img/instagram.svg" class="social_icon" alt="Instagram">
+            </a>
+        </section>
+        <h3>Nenhum &lt;div&gt; foi maltratado no processo. — Natalia Gomes Taira, 2025</h3>
+    </footer>
+    
 </body>
 </html>
