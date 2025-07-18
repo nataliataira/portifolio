@@ -7,11 +7,12 @@
     <meta name="author" content="Natalia Gomes Taira">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Meu Perfil</title>
 </head>
 <body>
     <header>
-        <div id="header_content">
+        <div id="header_content" class="flex">
             <div id="titulo">
                 <h1>Natalia Gomes Taira</h1>
             </div>
@@ -29,8 +30,8 @@
             </div>
         </div>
     </header>
-    <main id="contact">
-        <section id="contact">
+    <main>
+        <section id="contact" class="flex">
             <form action="#" method="submit" id="formulario">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
@@ -49,7 +50,7 @@
 
                 <button type="submit">Enviar</button>
             </form>
-            <article id="mapa">
+            <article id="mapa" class="flex_start">
                 <div id="endereco">
                     <p>R. da Consolação, 940</p>
                     <p>República, São Paulo - SP</p>
@@ -63,6 +64,8 @@
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
                 id="mapa"
+                onmousemove="mapaZoom()"
+                onmouseout="mapaNormal()"
                 >
                 </iframe>
             </article>
@@ -71,13 +74,13 @@
     <footer>
         <section id="redes_sociais">
             <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn">
+                <img src="assets/img/linkedin.svg" class="social_icon" alt="LinkedIn">
             </a>
             <a href="">
-                <img src="assets/img/github.svg" alt="Github">
+                <img src="assets/img/github.svg" class="social_icon" alt="Github">
             </a>
             <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram">
+                <img src="assets/img/instagram.svg" class="social_icon"alt="Instagram">
             </a>
         </section>
         <h3>Nenhum &lt;div&gt; foi maltratado no processo. — Natalia Gomes Taira, 2025</h3>
